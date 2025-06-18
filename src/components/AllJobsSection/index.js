@@ -57,7 +57,7 @@ const apiStatusConstants = {
 class AllJobsSection extends Component {
   state = {
     jobsList: [],
-    employmentTypes: [],
+    employmentTypes: employmentTypesList[0].employmentTypeId,
     salaryRanges: salaryRangesList[0].salaryRangeId,
     searchInput: '',
     appiStatus: apiStatusConstants.initial,
@@ -100,15 +100,8 @@ class AllJobsSection extends Component {
     }
   }
 
-  changeEmploymentType = (id, isChecked) => {
-    this.setState(
-      prev => ({
-        employmentTypes: isChecked
-          ? [...prev.employmentTypes, id]
-          : prev.employmentTypes.filter(e => e !== id),
-      }),
-      this.getProducts,
-    )
+  changeEmploymentType = id => {
+    this.setState({employmentTypes: id}, this.getProducts)
   }
 
   onChangeSearchInput = event => {
