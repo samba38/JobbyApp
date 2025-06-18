@@ -1,0 +1,20 @@
+.check-boxes {
+  list-style-type: none;
+}
+
+.boxes-int {
+  background-color: white;
+}
+
+.boxes-label {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.types-emply-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+}

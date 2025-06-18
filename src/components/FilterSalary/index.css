@@ -1,0 +1,20 @@
+.Salary-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.radio-circles {
+  list-style-type: none;
+}
+
+.radio-input {
+  background-color: white;
+}
+
+.radio-label {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}

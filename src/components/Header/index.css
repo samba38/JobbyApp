@@ -1,0 +1,48 @@
+.nav-container {
+  background-color: #2c364c;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.header-website-img {
+  height: 30px;
+  width: 80px;
+  align-self: center;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.unorder-head-list {
+  padding: 10px;
+  display: flex;
+}
+
+.list-head-items {
+  list-style-type: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.logout-btn {
+  background-color: #6366f1;
+  color: white;
+  height: 35px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.btn-list-retry {
+  list-style-type: none;
+  margin-top: 20px;
+}

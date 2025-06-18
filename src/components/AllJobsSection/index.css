@@ -1,0 +1,94 @@
+.siding-jobs-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-input {
+  background-color: transparent;
+  border-width: 0px;
+  height: 20px;
+  width: 190px;
+  color: white;
+}
+
+.search-icon-img {
+  color: white;
+  align-self: center;
+}
+
+.search-container {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 20px;
+  width: 180px;
+  display: flex;
+}
+.check-boxes {
+  list-style-type: none;
+}
+
+.boxes-int {
+  background-color: white;
+}
+
+.boxes-label {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.types-emply-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.Salary-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.radio-circles {
+  list-style-type: none;
+}
+
+.radio-input {
+  background-color: white;
+}
+
+.radio-label {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.failure-img {
+  height: 300px;
+  width: 600px;
+}
+
+.failure-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.failure-paragraph {
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.failure-btn {
+  background-color: #6366f1;
+  color: white;
+  height: 35px;
+  width: 90px;
+  border-width: 0px;
+  border-radius: 10px;
+}

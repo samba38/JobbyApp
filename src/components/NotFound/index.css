@@ -1,0 +1,27 @@
+.notF-container {
+  background-color: black;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notF-img {
+  height: 300px;
+  width: 600px;
+}
+
+.notF-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.notF-paragraph {
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 300;
+}

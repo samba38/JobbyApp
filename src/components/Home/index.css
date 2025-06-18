@@ -1,0 +1,47 @@
+.home-container {
+  background-color: #121212;
+  min-height: 100vh;
+  padding: 30px;
+  margin-top: 0px;
+  display: flex;
+}
+
+.home-card {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.home-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.home-paragraph {
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.home-btn {
+  background-color: #6366f1;
+  color: white;
+  height: 35px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.home-img {
+  height: 700px;
+  width: 800px;
+  align-self: flex-end;
+}
+
+.self-side {
+  display: flex;
+  flex-direction: column;
+}

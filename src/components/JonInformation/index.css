@@ -1,0 +1,159 @@
+.jobdata-container {
+  background-color: black;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobdata-card {
+  background-color: #2c364c;
+  min-height: 100vh;
+  padding: 10px;
+  width: 1000px;
+  margin-top: 40px;
+}
+
+.jobdata-img {
+  height: 70px;
+  width: 50px;
+  margin: 10px;
+}
+
+.jobdata-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.jobdata-paragraph1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.jobdata-paragraph2 {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.jobdata-paragraph3 {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.jobdata-star-img {
+  color: yellow;
+  align-self: center;
+}
+
+.jobdata-location-img {
+  color: white;
+  align-self: center;
+  height: 80px;
+}
+
+.jobdata-bag-img {
+  color: white;
+  align-self: center;
+}
+
+.firster-side {
+  display: flex;
+}
+
+.rating-sider {
+  display: flex;
+}
+
+.sider-imges {
+  display: flex;
+  margin: 10px;
+}
+
+.sider-imges1 {
+  display: flex;
+}
+
+.content-sider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobdata-description {
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.jobdata-paragraph-description {
+  color: white;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.skills-unorder-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  margin: 50px;
+}
+
+.skills-imgs {
+  height: 40px;
+  width: 40px;
+}
+
+.skills-paragraph {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.companu-life-description {
+  color: white;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.companu-life-img {
+  height: 160px;
+  width: 180px;
+  margin-left: 30px;
+}
+
+.life-companu-sider {
+  display: flex;
+  justify-content: space-around;
+}
+
+.unorder-similar-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.similar-list-type {
+  list-style-type: none;
+  background-color: #2c364c;
+  margin: 20px;
+  width: 300px;
+}
+
+.url-sider {
+  display: flex;
+  justify-content: space-between;
+}

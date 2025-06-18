@@ -1,0 +1,33 @@
+.user-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+}
+
+.user-del-img {
+  height: 30px;
+  width: 25px;
+}
+
+.user-paragraph {
+  color: #6366f1;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.user-paragraph-bio {
+  color: #2c364c;
+  font-family: Roboto;
+  font-size: 22px;
+}
+
+.retry-btn {
+  background-color: #6366f1;
+  color: white;
+  height: 35px;
+  width: 90px;
+  border-width: 0px;
+  border-radius: 10px;
+}

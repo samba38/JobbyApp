@@ -1,0 +1,92 @@
+.jobs-lists-type {
+  list-style-type: none;
+  background-color: #2c364c;
+  padding: 10px;
+  margin: 30px;
+  width: 700px;
+}
+
+.company-img {
+  height: 45px;
+  width: 60px;
+  margin-right: 25px;
+}
+
+.jobs-company-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fill-img {
+  color: yellow;
+  align-self: center;
+}
+
+.jobs-company-paragraph1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.loco-img {
+  color: white;
+  align-self: center;
+}
+
+.jobs-company-paragraph2 {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.bag-img {
+  color: white;
+  align-self: center;
+}
+
+.jobs-company-paragraph3 {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.jobs-company-paragraph4 {
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.sider {
+  display: flex;
+}
+
+.sider-space {
+  display: flex;
+  margin: 20px;
+}
+
+.sider2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs-company-description {
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.jobs-company-description-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.jobers-link {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.user-profile-img {
+  height: 30px;
+  width: 60px;
+  background-color: balck;
+}
+
+.user-profile-paragraph {
+  color: #6366f1;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.user-profile-bio {
+  color: #2c364c;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
