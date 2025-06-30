@@ -6,6 +6,7 @@ import {IoSearchOutline} from 'react-icons/io5'
 import JobsCard from '../JobsCard'
 import FilterJobs from '../FilterJobs'
 import FilterSalary from '../FilterSalary'
+import FilterLocation from '../FilterLocation'
 import ProfileDetails from '../ProfileDetails'
 import './index.css'
 
@@ -47,6 +48,29 @@ const salaryRangesList = [
   },
 ]
 
+const locationBased = [
+  {
+    location: 'Hyderabad',
+    locationId: 'HYDERABAD',
+  },
+  {
+    location: 'Bangalore',
+    locationId: 'BANGALORE',
+  },
+  {
+    location: 'Chennai',
+    locationId: 'CHENNAI',
+  },
+  {
+    location: 'Delhi',
+    locationId: 'DELHI',
+  },
+  {
+    location: 'Mumbai',
+    locationId: 'MUMBAI',
+  },
+]
+
 const apiStatusConstants = {
   initial: 'INITIAL',
   success: 'SUCCESS',
@@ -59,6 +83,7 @@ class AllJobsSection extends Component {
     jobsList: [],
     employmentTypes: employmentTypesList[0].employmentTypeId,
     salaryRanges: salaryRangesList[0].salaryRangeId,
+    locationType: locationBased[0].locationId,
     searchInput: '',
     appiStatus: apiStatusConstants.initial,
   }
@@ -69,8 +94,13 @@ class AllJobsSection extends Component {
 
   getProducts = async () => {
     this.setState({appiStatus: apiStatusConstants.inProgress})
-    const {employmentTypes, salaryRanges, searchInput} = this.state
-    const apiUrl = `https://apis.ccbp.in/jobs?employment_type=${employmentTypes}&minimum_package=${salaryRanges}&search=${searchInput}`
+    const {
+      employmentTypes,
+      salaryRanges,
+      searchInput,
+      locationType,
+    } = this.state
+    const apiUrl = `https://apis.ccbp.in/jobs?employment_type=${employmentTypes}&minimum_package=${salaryRanges}&location=${locationType}&search=${searchInput}`
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       method: 'GET',
@@ -81,6 +111,7 @@ class AllJobsSection extends Component {
     const response = await fetch(apiUrl, options)
     if (response.ok === true) {
       const data = await response.json()
+      console.log(data)
       const updatedData = data.jobs.map(eachJob => ({
         companyLogoUrl: eachJob.company_logo_url,
         employmentType: eachJob.employment_type,
@@ -106,6 +137,10 @@ class AllJobsSection extends Component {
 
   onChangeSearchInput = event => {
     this.setState({searchInput: event.target.value}, this.getProducts)
+  }
+
+  onChangeLocation = id => {
+    this.setState({locationType: id}, this.getProducts)
   }
 
   onChangeSearch = event => {
@@ -197,7 +232,7 @@ class AllJobsSection extends Component {
     const {jobsList, employmentTypes, salaryRanges, searchInput} = this.state
     return (
       <div className="siding-jobs-card">
-        <div>
+        <div className="filter-objects">
           {this.renderProfileDetails()}
           <hr />
           <FilterJobs
@@ -208,6 +243,11 @@ class AllJobsSection extends Component {
           <FilterSalary
             salaryRangesList={salaryRangesList}
             onChangeRadioInput={this.onChangeRadioInput}
+          />
+          <hr />
+          <FilterLocation
+            locationBased={locationBased}
+            onChangeLocation={this.onChangeLocation}
           />
         </div>
         <div>

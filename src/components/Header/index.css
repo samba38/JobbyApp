@@ -1,9 +1,9 @@
 .nav-container {
   background-color: #2c364c;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   height: 90px;
+  width: 100vw;
 }
 
 .header-website-img {
@@ -45,4 +45,14 @@
 .btn-list-retry {
   list-style-type: none;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    background-color: #2c364c;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 300vw;
+  }
 }

@@ -1,0 +1,20 @@
+.location-heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.location-type-list {
+  list-style-type: none;
+}
+
+.location-input {
+  background-color: white;
+}
+
+.location-type-label {
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+}

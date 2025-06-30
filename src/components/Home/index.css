@@ -1,9 +1,8 @@
 .home-container {
   background-color: #121212;
-  min-height: 100vh;
-  padding: 30px;
-  margin-top: 0px;
+  height: 100vh;
   display: flex;
+  width: 100vw;
 }
 
 .home-card {
@@ -44,4 +43,13 @@
 .self-side {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    background-color: #121212;
+    height: 130vh;
+    display: flex;
+    width: 300vw;
+  }
 }

@@ -7,7 +7,9 @@ class Jobs extends Component {
   render() {
     return (
       <>
-        <Header />
+        <div>
+          <Header />
+        </div>
         <div className="jobs-container">
           <AllJobsSection />
         </div>

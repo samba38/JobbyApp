@@ -92,3 +92,8 @@
   border-width: 0px;
   border-radius: 10px;
 }
+
+.filter-objects {
+  margin: 5px;
+  position: left, fixed;
+}
